@@ -50,7 +50,11 @@ userSchema.pre('save', async function (next){
         next(error);
     }
 });
-
+/**
+ * Compare entered password with stored hash
+ * @param enteredPassword 
+ * @returns 
+ */
 userSchema.methods.comparePassword = async function (enteredPassword){
     return bcrypt.compare(enteredPassword, this.password);
 };
