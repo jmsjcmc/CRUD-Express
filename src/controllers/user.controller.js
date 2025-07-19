@@ -1,4 +1,3 @@
-const { request } = require('http');
 const User = require('../models/user.model');
 
 exports.user = async (request, response) => {
