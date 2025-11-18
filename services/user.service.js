@@ -1,5 +1,5 @@
-import user from "../models/user"
-import userRole from "../models/userRole";
+import user from "../models/user.js"
+import userRole from "../models/userRole.js";
 
 export const createUser  = async (data) => {
     const user = await user.create(data);

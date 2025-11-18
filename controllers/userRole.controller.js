@@ -1,4 +1,4 @@
-import * as userRoleService from "../services/userRole.service"
+import * as userRoleService from "../services/userRole.service.js"
 
 export const assignRole = async (req, res) => {
     const result = await userRoleService.assignRole(

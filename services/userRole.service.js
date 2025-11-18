@@ -1,4 +1,4 @@
-import userRole from "../models/userRole"
+import userRole from "../models/userRole.js"
 
 export const assignRole = async (userID, roleID) => {
     return await userRole.create({userID, roleID});

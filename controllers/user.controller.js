@@ -1,6 +1,5 @@
 
-import * as userService from "../services/user.service"
-import { createUser } from './../services/user.service';
+import * as userService from "../services/user.service.js"
 
 export const createUser = async (req, res) => {
     const user = await userService.createUser(req.body);
